@@ -1,3 +1,4 @@
+// to track the number of history records as well as id of each record by serial number
 class counter{
     static ser = 0;
     static getCounter() {
@@ -5,7 +6,7 @@ class counter{
     }
 }
 
-
+// to get current date and time
 function dateTime() {
     const now = new Date();
     const dayName = now.toLocaleString('en-GB', { weekday: 'short' });
@@ -17,7 +18,7 @@ function dateTime() {
 }
 
 
-
+// to create a new history record
 function makeHistory(donation_type, amount) {
     hideShow('no-donations');
     const historyBook = document.getElementById('history-section');
@@ -48,20 +49,7 @@ function makeHistory(donation_type, amount) {
     historyBook.appendChild(newHistory);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// to show the history section
 document.getElementById('history-btn').addEventListener('click', function () {
     hideShow('donation-section');
     hideShow('history-section');
@@ -70,6 +58,7 @@ document.getElementById('history-btn').addEventListener('click', function () {
 
 })
 
+// to show the donation section
 document.getElementById('donation-btn').addEventListener('click', function () {
     hideShow('donation-section');
     hideShow('history-section');

@@ -1,5 +1,6 @@
+// switches to the blog page
 function blogPage() {
-    window.location.href = '/Project/HopeLink-Empowering-Donations/Blog.html';
+    window.location.href = '/HopeLink-Empowering-Donations/Blog.html';
 }
 
 

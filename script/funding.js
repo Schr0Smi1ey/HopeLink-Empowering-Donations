@@ -1,3 +1,4 @@
+// To maintain the balance of the donation and the total balance of the user
 function addDonation(input_field_id, donation_id, donation_type) {
     let have_balance = getTextFieldValueByID('total-balance');
     let donation_balance = getTextFieldValueByID(donation_id);
