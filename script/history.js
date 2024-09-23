@@ -25,7 +25,7 @@ function makeHistory(donation_type, amount) {
     const newHistory = document.createElement('div');
 
     const content = `
-        <div id="history" class="w-full mx-auto flex justify-between lg:justify-around items-start border-2 border-gray-200 p-5 rounded-lg">
+        <div id="history" class="w-full mx-auto flex justify-between px-5 lg:px-10 xl:px-14 2xl:px-16 items-start border-2 border-gray-200 p-5 rounded-lg">
             <div id="donation-info" class="flex flex-col gap-2">
                 <p id="donation-type" class="font-bold text-lg"></p>
                 <p id="donation-time"></p>
