@@ -25,7 +25,7 @@ function makeHistory(donation_type, amount) {
     const newHistory = document.createElement('div');
 
     const content = `
-        <div id="history" class="w-full mx-auto flex justify-between px-5 lg:px-10 xl:px-14 2xl:px-16 items-start border-2 border-gray-200 p-5 rounded-lg">
+        <div id="history" class="w-full mx-auto flex justify-between p-5 mb-3 lg:px-10 xl:px-14 2xl:px-16 items-start border-2 border-gray-200 rounded-lg">
             <div id="donation-info" class="flex flex-col gap-2">
                 <p id="donation-type" class="font-bold text-lg"></p>
                 <p id="donation-time"></p>
@@ -46,7 +46,7 @@ function makeHistory(donation_type, amount) {
     historyMakeHelper(newHistory, 'donation-amount', serial, `+${amount}`);
     newHistory.querySelector(`#donation-amount-${serial}`).classList.add('text-green-500');
 
-    historyBook.appendChild(newHistory);
+    historyBook.prepend(newHistory);
 }
 
 // to show the history section
