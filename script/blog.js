@@ -4,3 +4,7 @@ function blogPage() {
 }
 
 
+// switches to the home page
+function homePage() {
+    window.location.href = '/HopeLink-Empowering-Donations/index.html';
+}
