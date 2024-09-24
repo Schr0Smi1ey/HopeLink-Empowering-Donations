@@ -28,10 +28,12 @@ function successfulDonation() {
 // to toggle a element visibility
 function hideShow(id) {
     const element = document.getElementById(id);
-    if (element.classList.contains('hidden'))
+    if (element.classList.contains('hidden')) {
         element.classList.remove('hidden');
-    else
+    }
+    else {
         element.classList.add('hidden');
+    }
 }
 
 // Function to set attributes and inner content of newly donation records

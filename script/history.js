@@ -51,17 +51,22 @@ function makeHistory(donation_type, amount) {
 
 // to show the history section
 document.getElementById('history-btn').addEventListener('click', function () {
-    hideShow('donation-section');
-    hideShow('history-section');
+    const historySection = document.getElementById('history-section'); 
+    if(historySection.classList.contains('hidden')) {
+        hideShow('history-section');
+        hideShow('donation-section');
+    }
     document.getElementById('history-btn').style.backgroundColor = '#B4F461';
     document.getElementById('donation-btn').style.backgroundColor = 'white';
-
 })
 
 // to show the donation section
 document.getElementById('donation-btn').addEventListener('click', function () {
-    hideShow('donation-section');
-    hideShow('history-section');
+    const donationSection = document.getElementById('donation-section');
+    if(donationSection.classList.contains('hidden')) {
+        hideShow('donation-section');
+        hideShow('history-section');
+    }
     document.getElementById('donation-btn').style.backgroundColor = '#B4F461';
     document.getElementById('history-btn').style.backgroundColor = 'white'
 })
