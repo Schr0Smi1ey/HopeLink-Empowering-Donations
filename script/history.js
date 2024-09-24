@@ -20,7 +20,7 @@ function dateTime() {
 
 // to create a new history record
 function makeHistory(donation_type, amount) {
-    hideShow('no-donations');
+    document.getElementById('no-donations').style.display = 'none';
     const historyBook = document.getElementById('history-section');
     const newHistory = document.createElement('div');
 
