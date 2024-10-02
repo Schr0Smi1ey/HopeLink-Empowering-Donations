@@ -1,7 +1,7 @@
-// switches to the blog page
-function blogPage(event) {
+// switches to the faq page
+function faqPage(event) {
     event.preventDefault();
-    window.location.href = '/HopeLink-Empowering-Donations/Blog.html';
+    window.location.href = '/HopeLink-Empowering-Donations/FAQ.html';
 }
 
 

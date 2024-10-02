@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
+    <title>FAQ - HopeLink</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,8 +53,10 @@
         <div class="flex gap-1 lg:gap-2 items-center">
           <img src="assets/logo.png" alt="logo" class="w-10 h-10" />
           <p class="font-medium text-base lg:text-lg">
-            HopeLink
-            <span class="hidden sm:inline-block">- Empowering Donations</span>
+            Donate
+            <span class="hidden sm:inline-block text-green-600">
+              Bangladesh</span
+            >
           </p>
         </div>
         <div class="flex gap-1 lg:gap-2 items-center">
@@ -66,11 +68,11 @@
       </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- FAQ Section -->
     <section class="md:container mx-auto mb-10 lg:mb-14">
       <div class="text-center mb-16">
         <h1 class="font-semibold text-3xl md:text-4xl lg:text-5xl">
-          Frequently Asked <span class="text-primary-colour">Questions</span>
+          Frequently Asked <span class="text-primary">Questions</span>
         </h1>
       </div>
       <div
@@ -80,71 +82,81 @@
           <div class="collapse collapse-arrow border-[1px] border-[#1111111A]">
             <input type="checkbox" />
             <div class="collapse-title text-xl font-medium">
-              What is the Document Object Model (DOM)?
+              How do I make a donation on HopeLink?
             </div>
             <div class="collapse-content">
-              <p class="font-normal text-sm md:text-base lg:text-lg text-gray-500">
-                The Document Object Model (DOM) is a programming interface for
-                web pages. It represents the structure of a page, allowing
-                programs to modify its content, style, and layout. By organizing
-                the document into nodes and objects, the DOM enables programming
-                languages to interact with and manipulate the page dynamically.
+              <p
+                class="font-normal text-sm md:text-base lg:text-lg text-gray-500"
+              >
+                Making a donation on HopeLink is simple! Just browse the causes
+                you want to support, click the "Donate Now" button, enter your
+                donation amount, and follow the secure payment process.
               </p>
             </div>
           </div>
+
           <div class="collapse collapse-arrow border-[1px] border-[#1111111A]">
             <input type="checkbox" />
             <div class="collapse-title text-xl font-medium">
-              How do you select an element from the DOM?
+              How does my donation help?
             </div>
             <div class="collapse-content">
-              <p class="text-sm md:text-base lg:text-lg font-normal text-gray-500">
-                I can select an element from the DOM using methods like
-                document.getElementById(), document.querySelector(),
-                document.querySelectorAll() , document.getElementsByClassName()
-                or document.getElementsByTagName().
-              </p>
-          </div>
-          <div class="collapse collapse-arrow border-[1px] border-[#1111111A]">
-            <input type="checkbox" />
-            <div class="collapse-title text-xl font-medium">
-              What is event delegation in the context of the DOM, and why is it
-              useful?
-            </div>
-            <div class="collapse-content">
-              <p class="font-normal text-sm md:text-base lg:text-lg text-gray-500">
-                Event delegation is a technique in the DOM where a single event
-                listener is attached to a parent element to handle events for
-                multiple child elements, instead of adding individual listeners
-                to each child.
-              </p>
-              <br />
-              <p class="font-normal text-sm md:text-base lg:text-lg text-gray-500">
-                It is useful because it reduces memory usage and improves
-                performance by minimizing the number of event listeners attached
-                to multiple elements. It also handles events for dynamically
-                added child elements, as the parent listener will still capture
-                events from newly created children.
+              <p
+                class="font-normal text-sm md:text-base lg:text-lg text-gray-500"
+              >
+                Your donation directly supports the cause you've chosen, whether
+                it's disaster relief, education, healthcare, or other charitable
+                initiatives. We ensure that 100% of your contributions reach the
+                intended recipients.
               </p>
             </div>
           </div>
+
           <div class="collapse collapse-arrow border-[1px] border-[#1111111A]">
             <input type="checkbox" />
             <div class="collapse-title text-xl font-medium">
-              How do you manipulate an element's attributes and styles using the
-              DOM?
+              Can I track how my donations are being used?
             </div>
             <div class="collapse-content">
-              <p class="font-normal text-sm md:text-base lg:text-lg text-gray-500">
-                I can manipulate an element's attributes and styles using the
-                properties and methods provided by the DOM.
-                <br />
-                <br />
-                For example, I can change an element's text using the innerText
-                or textContent properties, and modify its attributes with the
-                setAttribute() and getAttribute() methods. Additionally, I can
-                adjust its styles using the style property or manipulate classes
-                with classList.add() and classList.remove().
+              <p
+                class="font-normal text-sm md:text-base lg:text-lg text-gray-500"
+              >
+                Yes! HopeLink provides regular updates on all campaigns, so you
+                can see how your contributions are making a difference. You will
+                receive reports and updates via email or directly through your
+                HopeLink account.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow border-[1px] border-[#1111111A]">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">
+              Is my donation tax-deductible?
+            </div>
+            <div class="collapse-content">
+              <p
+                class="font-normal text-sm md:text-base lg:text-lg text-gray-500"
+              >
+                Yes, donations made through HopeLink are tax-deductible in many
+                countries. Please check your local tax regulations or consult a
+                tax advisor for more details.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow border-[1px] border-[#1111111A]">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">
+              Can I donate anonymously?
+            </div>
+            <div class="collapse-content">
+              <p
+                class="font-normal text-sm md:text-base lg:text-lg text-gray-500"
+              >
+                Absolutely! When making a donation, you can choose to remain
+                anonymous by selecting the anonymous donation option during the
+                checkout process.
               </p>
             </div>
           </div>
@@ -152,8 +164,7 @@
       </div>
     </section>
 
-
     <!-- Scripts -->
-    <script src="script/blog.js"></script>
+    <script src="script/faq.js"></script>
   </body>
 </html>
